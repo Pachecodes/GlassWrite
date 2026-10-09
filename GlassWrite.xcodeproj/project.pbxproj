@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225CA291B537519DCEAF1DBF /* FloatingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878FA36D0BFC64EC9ABE455A /* FloatingOverlayView.swift */; };
+		2F70363E7F26F1FA4A643707 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A4EE907C65AFB0A5B832D /* VisualEffectView.swift */; };
+		3AB6E4038D703848FEF22744 /* OllamaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13436C7481F3D76A2C6A60AE /* OllamaClient.swift */; };
+		3E64DA030BDA2944B1D6D392 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38493CB746955CC8AB1AA8 /* SettingsView.swift */; };
+		42FBF3F09FBF3F58ED33795F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954CCD2F774B173A4268E22B /* AppState.swift */; };
+		4945F0B7D3F6A8A19093EFD7 /* FocusedTextMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5E670899637A6A6AEB919C /* FocusedTextMonitor.swift */; };
+		4A18DC1418B3CD9AB5D96854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A697A273650CB570AB405AD /* AppDelegate.swift */; };
+		4DFDA46FF271D3AFADCE9625 /* TextSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5E60F9E455E7FD23EEFFD /* TextSafety.swift */; };
+		6CADE876A0EC1EC913ACC3D9 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76406CE6CFE942CB93FCA01 /* AppSettings.swift */; };
+		6D9240A3C11858617A6E82E8 /* OllamaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13436C7481F3D76A2C6A60AE /* OllamaClient.swift */; };
+		712E2C9EA7C0C43EBD177B22 /* OllamaServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5812BFFF71096ED9666D4225 /* OllamaServiceTests.swift */; };
+		7A38B2CC3547A9388CE238E6 /* FloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303F5C6B786C419F968A0EC8 /* FloatingPanelController.swift */; };
+		8CFFDA36EC33316D909B28EF /* TextSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5E60F9E455E7FD23EEFFD /* TextSafety.swift */; };
+		A7F7430D4F0CAFE7979AD8BA /* GlassWriteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE97DDB188FF0338DB79C2C4 /* GlassWriteApp.swift */; };
+		AF0524348073EEE1050DEE91 /* SafetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE59984213651AEED0C8A6F /* SafetyTests.swift */; };
+		B09376704CAD24FB136FC51D /* GlassWriteCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70F87D8879E21CF680401850 /* GlassWriteCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5E237B967A1DC7B43978FA1 /* GlassWriteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F87D8879E21CF680401850 /* GlassWriteCore.framework */; };
+		E716D998EA7A95912829F4E8 /* FocusedTextMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5E670899637A6A6AEB919C /* FocusedTextMonitor.swift */; };
+		F75DBBB7B82759B795B0D8A8 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76406CE6CFE942CB93FCA01 /* AppSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1F78DCF5B20E59C1F640858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDA19BF240E3FF855E8F316D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAC72EF1529B7A810C835598;
+			remoteInfo = GlassWriteCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E66466AD816D9AB620A9640 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B09376704CAD24FB136FC51D /* GlassWriteCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13436C7481F3D76A2C6A60AE /* OllamaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaClient.swift; sourceTree = "<group>"; };
+		191A4EE907C65AFB0A5B832D /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		303F5C6B786C419F968A0EC8 /* FloatingPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPanelController.swift; sourceTree = "<group>"; };
+		3D5E670899637A6A6AEB919C /* FocusedTextMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedTextMonitor.swift; sourceTree = "<group>"; };
+		56363A78858A4363D9A395B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5812BFFF71096ED9666D4225 /* OllamaServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaServiceTests.swift; sourceTree = "<group>"; };
+		5A697A273650CB570AB405AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70F87D8879E21CF680401850 /* GlassWriteCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GlassWriteCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		878FA36D0BFC64EC9ABE455A /* FloatingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingOverlayView.swift; sourceTree = "<group>"; };
+		8BE9FE8752F0B40BFE0A5CA2 /* GlassWrite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassWrite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		954CCD2F774B173A4268E22B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9B9139CFB2D35A46374370DD /* GlassWriteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlassWriteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC5E60F9E455E7FD23EEFFD /* TextSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSafety.swift; sourceTree = "<group>"; };
+		9D38493CB746955CC8AB1AA8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D76406CE6CFE942CB93FCA01 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		FDE59984213651AEED0C8A6F /* SafetyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTests.swift; sourceTree = "<group>"; };
+		FE97DDB188FF0338DB79C2C4 /* GlassWriteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassWriteApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA382FAC8D2D7C84324C3F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E237B967A1DC7B43978FA1 /* GlassWriteCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08B43D78F29F50375B26ED93 /* GlassWriteTests */ = {
+			isa = PBXGroup;
+			children = (
+				5812BFFF71096ED9666D4225 /* OllamaServiceTests.swift */,
+				FDE59984213651AEED0C8A6F /* SafetyTests.swift */,
+			);
+			path = GlassWriteTests;
+			sourceTree = "<group>";
+		};
+		3171E3C4F60A56FFA5AA10D9 /* GlassWrite */ = {
+			isa = PBXGroup;
+			children = (
+				5A697A273650CB570AB405AD /* AppDelegate.swift */,
+				303F5C6B786C419F968A0EC8 /* FloatingPanelController.swift */,
+				FE97DDB188FF0338DB79C2C4 /* GlassWriteApp.swift */,
+				D79A720A90AB5560C10CA34C /* Models */,
+				E1079E3E9144FA5FCF1FADD1 /* Resources */,
+				CEAD34E0D7C182EA6B30D921 /* Services */,
+				FCFAC80B205C2A31EC91C5C3 /* Views */,
+			);
+			path = GlassWrite;
+			sourceTree = "<group>";
+		};
+		73943142B33907F848D1B0FE = {
+			isa = PBXGroup;
+			children = (
+				3171E3C4F60A56FFA5AA10D9 /* GlassWrite */,
+				08B43D78F29F50375B26ED93 /* GlassWriteTests */,
+				87CD15DE0ACFA53E42DC1F6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87CD15DE0ACFA53E42DC1F6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE9FE8752F0B40BFE0A5CA2 /* GlassWrite.app */,
+				70F87D8879E21CF680401850 /* GlassWriteCore.framework */,
+				9B9139CFB2D35A46374370DD /* GlassWriteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAD34E0D7C182EA6B30D921 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D5E670899637A6A6AEB919C /* FocusedTextMonitor.swift */,
+				13436C7481F3D76A2C6A60AE /* OllamaClient.swift */,
+				9BC5E60F9E455E7FD23EEFFD /* TextSafety.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D79A720A90AB5560C10CA34C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D76406CE6CFE942CB93FCA01 /* AppSettings.swift */,
+				954CCD2F774B173A4268E22B /* AppState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1079E3E9144FA5FCF1FADD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56363A78858A4363D9A395B6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCFAC80B205C2A31EC91C5C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				878FA36D0BFC64EC9ABE455A /* FloatingOverlayView.swift */,
+				9D38493CB746955CC8AB1AA8 /* SettingsView.swift */,
+				191A4EE907C65AFB0A5B832D /* VisualEffectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DF5395C2A7F261568FA0C7C /* GlassWriteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46B10AAC0AB286BBF05C3C3 /* Build configuration list for PBXNativeTarget "GlassWriteTests" */;
+			buildPhases = (
+				46FAE9D8B4721754B174DD56 /* Sources */,
+				BA382FAC8D2D7C84324C3F34 /* Frameworks */,
+				0E66466AD816D9AB620A9640 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFBDD5300FD3E3B44384EC1 /* PBXTargetDependency */,
+			);
+			name = GlassWriteTests;
+			productName = GlassWriteTests;
+			productReference = 9B9139CFB2D35A46374370DD /* GlassWriteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAC72EF1529B7A810C835598 /* GlassWriteCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E862AB27C3CD0D7259BDBB39 /* Build configuration list for PBXNativeTarget "GlassWriteCore" */;
+			buildPhases = (
+				E7D7261F97B6B4FE43AE0407 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlassWriteCore;
+			productName = GlassWriteCore;
+			productReference = 70F87D8879E21CF680401850 /* GlassWriteCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E29E3EAB51117BF03239C442 /* GlassWrite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EF3383AC25BE5E3509963D9 /* Build configuration list for PBXNativeTarget "GlassWrite" */;
+			buildPhases = (
+				A2C0BBCF603EE60AE1F017A1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlassWrite;
+			productName = GlassWrite;
+			productReference = 8BE9FE8752F0B40BFE0A5CA2 /* GlassWrite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDA19BF240E3FF855E8F316D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E29E3EAB51117BF03239C442 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D76666213B0E3AC94E2354EE /* Build configuration list for PBXProject "GlassWrite" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 73943142B33907F848D1B0FE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E29E3EAB51117BF03239C442 /* GlassWrite */,
+				CAC72EF1529B7A810C835598 /* GlassWriteCore */,
+				1DF5395C2A7F261568FA0C7C /* GlassWriteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46FAE9D8B4721754B174DD56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712E2C9EA7C0C43EBD177B22 /* OllamaServiceTests.swift in Sources */,
+				AF0524348073EEE1050DEE91 /* SafetyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C0BBCF603EE60AE1F017A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A18DC1418B3CD9AB5D96854 /* AppDelegate.swift in Sources */,
+				F75DBBB7B82759B795B0D8A8 /* AppSettings.swift in Sources */,
+				42FBF3F09FBF3F58ED33795F /* AppState.swift in Sources */,
+				225CA291B537519DCEAF1DBF /* FloatingOverlayView.swift in Sources */,
+				7A38B2CC3547A9388CE238E6 /* FloatingPanelController.swift in Sources */,
+				4945F0B7D3F6A8A19093EFD7 /* FocusedTextMonitor.swift in Sources */,
+				A7F7430D4F0CAFE7979AD8BA /* GlassWriteApp.swift in Sources */,
+				6D9240A3C11858617A6E82E8 /* OllamaClient.swift in Sources */,
+				3E64DA030BDA2944B1D6D392 /* SettingsView.swift in Sources */,
+				8CFFDA36EC33316D909B28EF /* TextSafety.swift in Sources */,
+				2F70363E7F26F1FA4A643707 /* VisualEffectView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7D7261F97B6B4FE43AE0407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CADE876A0EC1EC913ACC3D9 /* AppSettings.swift in Sources */,
+				E716D998EA7A95912829F4E8 /* FocusedTextMonitor.swift in Sources */,
+				3AB6E4038D703848FEF22744 /* OllamaClient.swift in Sources */,
+				4DFDA46FF271D3AFADCE9625 /* TextSafety.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CFBDD5300FD3E3B44384EC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAC72EF1529B7A810C835598 /* GlassWriteCore */;
+			targetProxy = E1F78DCF5B20E59C1F640858 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1509E0F2BD76427E68D5E0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = GlassWrite/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.akitapr.GlassWrite;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3BBA15F283DC9B25AF419294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		46F2B1C260D8D1E369C55E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.akitapr.GlassWriteCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		48688C747F12FE6B6606C928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.akitapr.GlassWriteCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		4B73CCA39D16855B088D450B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = GlassWrite/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.akitapr.GlassWrite;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9AA47F54AFA0391F6F54633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.akitapr.GlassWriteTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D3CF857F23DA63BC99037316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.akitapr.GlassWriteTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ED3CDDAA5D078F9820FE93B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EF3383AC25BE5E3509963D9 /* Build configuration list for PBXNativeTarget "GlassWrite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B73CCA39D16855B088D450B /* Debug */,
+				1509E0F2BD76427E68D5E0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A46B10AAC0AB286BBF05C3C3 /* Build configuration list for PBXNativeTarget "GlassWriteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CF857F23DA63BC99037316 /* Debug */,
+				C9AA47F54AFA0391F6F54633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D76666213B0E3AC94E2354EE /* Build configuration list for PBXProject "GlassWrite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBA15F283DC9B25AF419294 /* Debug */,
+				ED3CDDAA5D078F9820FE93B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E862AB27C3CD0D7259BDBB39 /* Build configuration list for PBXNativeTarget "GlassWriteCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F2B1C260D8D1E369C55E29 /* Debug */,
+				48688C747F12FE6B6606C928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDA19BF240E3FF855E8F316D /* Project object */;
+}

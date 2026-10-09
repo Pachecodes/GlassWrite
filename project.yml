@@ -1,0 +1,59 @@
+name: GlassWrite
+options:
+  bundleIdPrefix: com.akitapr
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    MACOSX_DEPLOYMENT_TARGET: 14.0
+targets:
+  GlassWrite:
+    type: application
+    platform: macOS
+    sources:
+      - GlassWrite
+    info:
+      path: GlassWrite/Resources/Info.plist
+      properties:
+        CFBundleName: GlassWrite
+        CFBundleDisplayName: GlassWrite
+        CFBundleIdentifier: com.akitapr.GlassWrite
+        CFBundleShortVersionString: "0.1"
+        CFBundleVersion: "1"
+        LSUIElement: true
+        NSHumanReadableCopyright: "Copyright Jesus Pacheco / Akitá Labs"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.akitapr.GlassWrite
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+        INFOPLIST_FILE: GlassWrite/Resources/Info.plist
+  GlassWriteCore:
+    type: framework
+    platform: macOS
+    sources:
+      - GlassWrite/Services
+      - GlassWrite/Models/AppSettings.swift
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+  GlassWriteTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - GlassWriteTests
+    dependencies:
+      - target: GlassWriteCore
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  GlassWrite:
+    build:
+      targets:
+        GlassWrite: all
+        GlassWriteTests: [test]
+    test:
+      targets:
+        - GlassWriteTests

@@ -1,0 +1,14 @@
+# Local and generated build artifacts
+.DS_Store
+DerivedData/
+build/
+.build/
+*.xcresult
+*.profraw
+*.xcarchive
+xcuserdata/
+*.xcuserstate
+.env
+.env.*
+!.env.example
+*.log
